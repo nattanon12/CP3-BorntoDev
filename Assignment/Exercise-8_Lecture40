@@ -1,0 +1,44 @@
+print("Welcome to ---JuneShop---")
+print("โปรด Login เพื่อเข้าสู่ระบบ")
+username = input("กรุณากรอก Username :")
+password = int(input("กรุณากรอก Password (ตัวเลขเท่านั้น) :"))
+
+if username == "adam" and password == 1234:
+    print("ยินดีต้อนรับเข้าสู่ระบบคุณ : "+ username)
+else:
+    print("Username or Password Incorrect. Pls Try Again!")
+    exit()
+print("ยินดีต้อนรับ ---JuneShop---")
+print("รายการสินค้า")
+print("1. Speaker Bluetooth 200 THB")
+print("2. Keyboard Gaming Wireless 250 THB")
+print("3. Mouse Wireless 150 THB")
+print("4. Microphone Wireless 250 THB ")
+print("5. สายชาร์จโทรศัพท์ 100 THB")
+print("6. Powerbank 50000 mAh 250 THB ")
+choice: int =int(input("กรุณาเลือกหมายเลขสินค้า 1-6 :"))
+qt = int(input("กรุณาเลือกจำนวนสินค้า :"))
+if choice == 1:
+         Item_name = "Speaker Bluetooth"
+         price = 200
+elif choice == 2:
+         Item_name = "Keyboard Gaming Wireless"
+         price = 250
+elif choice == 3:
+        Item_name = "Mouse Wireless"
+        price = 150
+elif choice == 4:
+        Item_name = "Microphone Wireless"
+        price = 250
+elif choice == 5:
+        Item_name = "สายชาร์จโทรศัพท์"
+        price = 100
+elif choice == 6:
+        Item_name = "Powerbank 5000"
+        price = 250
+else:
+    print("ไม่พบเลขรายการสินค้า")
+total_price = price * qt
+print(f"คุณเลือกสินค้า {Item_name} ")
+print(f"จำนวนสินค้า {qt} ราคาสินค้าต่อชิ้น {price} THB")
+print(f"ราคาทั้งหมดที่ต้องชำระ : {total_price} THB")
