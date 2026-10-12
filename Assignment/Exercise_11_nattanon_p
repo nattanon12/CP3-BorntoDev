@@ -1,0 +1,5 @@
+number = int(input("Enter a number: "))
+for x in range (number):
+    space = " " * (number - (x+1 -1))
+    star = "*" * (2 * x+1)
+    print(space + star)
