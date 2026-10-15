@@ -1,0 +1,19 @@
+#บวก
+def addplusnumber(x,y):
+    print(x + y)
+addplusnumber(20,20)
+
+#ลบ
+def addminusnumber(x,y):
+    print(x - y)
+addminusnumber(100,50)
+
+#คูณ
+def addtimesnumber(x,y):
+    print(x * y)
+addtimesnumber(5,5)
+
+#หาร
+def adddividednumber(x,y):
+    print(x / y)
+adddividednumber(4,2)
